@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/229c3db617.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo(1).png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web developer</p>
+        <h1>Hi, I'm <span>Anubhav</span><br>I am a student of LNMIIT </h1>
+      </div>
+    </div>
+  </div>
+  <!-- --------about---------- -->
+  <div id="about">
+    <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/formal.jpg" alt="">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>A person with a passion for learning new skills. Focussed and hardworking college student always open to discovering new sectors of life. An individual who utilises hundred percent of his skillset and will prove to be an asset for a company. An observant and enthusiastic personality. As far as my career objectives are considered I see myself working for the society providing advanced technologies for the betterment and development in a positive sense.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>React js</span><br>For creating good dynamic and responsive web applications</li>
+            <li><span>Data Structures</span><br>Solved over 300 questions over all platforms</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>10th(2018)</span><br>84%<br>Delhi Public School, Gandhinagar</li>
+            <li><span>12th(2020)</span><br>92%<br>Puna International School, Ahmedabad</li>
+            <li><span>B.Tech(2024)</span><br>The LNM Institute of Information Technology,Jaipur</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- -------------services------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web development</h2>
+          <p>I take immense pride in my ability to create exceptional websites that blend aesthetics with functionality, and I am excited to showcase my web development expertise on my portfolio. As a skilled and innovative web developer, I possess a comprehensive understanding of various programming languages, frameworks, and design principles that allow me to craft engaging and user-friendly websites. Through my dedication and attention to detail, I consistently strive to deliver projects that not only meet but exceed client expectations. With a keen eye for emerging trends and a passion for staying at the forefront of web development, I am confident in my ability to contribute significantly to any digital project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------portfolio------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The app connects you to the talented people around the world.</p>
+            <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="">
+          <div class="layer">
+            <h3>Image Search App</h3>
+            <p>The app connects you to the talented people around the world.</p>
+            <a href="https://github.com/anubhavRaj27/image_search"><i class="fa-solid fa-hashtag"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>My portfolio</h3>
+            <p>The app connects you to the talented people around the world.</p>
+            <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/anubhavRaj27" class="btn">See more</a>
+    </div>
+  </div>
+<!-------contact----------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me </h1>
+        <p><i class="fa-solid fa-envelope"></i>20ucc018@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>9099647489</p>
+        <div class="social-icon">
+          <a href="https://twitter.com/Anubhav73535847"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/anubhav-raj-a918a0215/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/anubhavRaj27"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="email" placeholder="Your Email" required>
+          <textarea type="text" name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="scripts.js"></script>
+</body>
+</html>
